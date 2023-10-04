@@ -38,7 +38,7 @@ const InputFormMo: React.FC = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/mo', {
+            const response = await fetch('https://agronomia.onrender.com/api/mo', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

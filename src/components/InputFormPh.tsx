@@ -38,7 +38,7 @@ const InputFormPh: React.FC = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/ph', {
+            const response = await fetch('https://agronomia.onrender.com/api/ph', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
