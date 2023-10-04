@@ -8,6 +8,7 @@ interface InputValues {
 
 const InputForm: React.FC = () => {
     const [responseData, setResponseData] = useState<any>(null);
+    const [isLoading, setIsLoading] = useState(false); 
     const [inputValues, setInputValues] = useState<InputValues>({
         pH: 4.87,
         MO: 16.041250728069,

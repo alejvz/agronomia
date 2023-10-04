@@ -84,12 +84,14 @@ const InputFormMo: React.FC = () => {
                     Enviar datos
                 </button>
                 <div className="mt-4">
-                    {responseData && (
+                    {responseData == null ? (
+                        <p>Respuesta...</p>
+                    ) : responseData ? (
                         <div>
                             <h2>Respuesta de la API:</h2>
                             <pre>{JSON.stringify(responseData, null, 2)}</pre>
                         </div>
-                    )}
+                    ) : null}
                 </div>
             </form>
         </div>
